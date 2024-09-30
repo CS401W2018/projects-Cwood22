@@ -2,6 +2,7 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: rgb(246, 212, 160);
     font-size: medium;
+    color: white;
 }
  h1{color: rgb(3, 255, 255);
 font-size: 50px; text-align: center;
