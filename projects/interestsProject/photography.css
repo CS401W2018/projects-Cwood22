@@ -2,17 +2,18 @@ header h1{color: rgb(3, 255, 255);
 font-size: 50px; text-align: center;
 }
 header {
-    background-color: rgb(112, 112, 112);
+    background-color: rgb(29, 29, 29);
 }
 nav {
-    font-size: 24px; color: rgb(80, 0, 155);
-    background-color: rgb(245, 199, 143);
+    font-size: 24px; color: rgb(221, 0, 255);
+    background-color: rgb(255, 239, 68);
+    text-align: center;
 }
 main {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: rgb(255, 255, 255);
     background-blend-mode: lighten;
-    background-color: rgb(3, 74, 255);
+    background-color: rgb(95, 3, 255);
 }
 #question1 {
 font-size: smaller;
@@ -30,4 +31,12 @@ h3 {
 }
 .bolder {
     font-weight: bolder;
+}
+footer {
+    font-size: smaller;
+    font-family: Arial, Helvetica, sans-serif
+    
+}
+.links {
+    color: rgb(247, 255, 4);
 }
