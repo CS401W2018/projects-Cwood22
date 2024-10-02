@@ -56,6 +56,7 @@ h2{
 #color1 {
     color: rgb(255, 132, 0);
 }
-.waves {
-    height: 900px;
+#waves {
+    height: 500px;
+    width: 631px;
 }
