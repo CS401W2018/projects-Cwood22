@@ -1,0 +1,14 @@
+body {
+    color: black;
+    font-family: monospace;
+    background-color: black;
+    background: url(testminecraft.jpg); background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+nav {
+    color: rgb(255, 6, 6);
+}
+header {
+
+}
