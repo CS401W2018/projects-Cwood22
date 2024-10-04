@@ -1,5 +1,5 @@
 body {
-    color: black;
+    color: rgb(190, 2, 2);
     font-family: monospace;
     background-color: rgb(255, 255, 255);
     background: url(testminecraft.jpg); background-size: cover;
@@ -18,5 +18,5 @@ main {
     background-repeat: no-repeat;
 }
 p {
-
+background-color: aqua;
 }
