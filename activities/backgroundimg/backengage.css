@@ -1,7 +1,7 @@
 body {
     color: black;
     font-family: monospace;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     background: url(testminecraft.jpg); background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -10,5 +10,13 @@ nav {
     color: rgb(255, 6, 6);
 }
 header {
+background-color: aquamarine;
+}
+main {
+    background-image: url(waves.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+p {
 
 }
