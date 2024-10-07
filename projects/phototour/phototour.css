@@ -44,3 +44,6 @@ footer {
 li {
     list-style-image: url(W.ico);
 }
+#hall {
+    vertical-align: bottom;
+}
