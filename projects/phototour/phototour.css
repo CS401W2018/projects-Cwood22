@@ -1,0 +1,43 @@
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    color: rgb(104, 240, 255);
+}
+header {
+    font-size: large; text-align: center;
+}
+nav a{
+color: rgb(152, 255, 118);
+    
+}
+nav {
+    font-size: small; text-align: center; 
+}
+.home {
+background-image: url(home.jpg);
+background-color: bisque;
+}
+#mainhome {
+    background-image: url(figs.jpg);background-repeat: no-repeat;background-position: right;
+}
+.current {
+    color: rgb(208, 208, 208);
+}
+footer {
+    align-items: baseline;
+}
+main a {
+    color: rgb(174, 254, 121);
+}
+.fathers {
+    vertical-align: top;
+}
+footer {
+    font-size: x-small;
+}
+#byebye {
+    vertical-align:text-bottom
+}
+#lego {
+    vertical-align: top;
+}
