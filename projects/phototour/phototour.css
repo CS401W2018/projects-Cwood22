@@ -18,7 +18,7 @@ background-image: url(home.jpg);
 background-color: bisque;
 }
 #mainhome {
-    background-image: url(figs.jpg);background-repeat: no-repeat;background-position: right;
+    background-image: url(figs.jpg);background-repeat: no-repeat;background-position: top right;
 }
 .current {
     color: rgb(208, 208, 208);
@@ -40,4 +40,7 @@ footer {
 }
 #lego {
     vertical-align: top;
+}
+li {
+    list-style-image: url(W.ico);
 }
