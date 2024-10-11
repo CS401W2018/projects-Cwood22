@@ -3,4 +3,43 @@ body {
 }
 header {
     text-align: center;
+    background-color: aquamarine;
+}
+nav {
+}
+footer {
+    font-size: smaller;
+}
+figure {
+    border: 5px solid black;
+    float: left;
+}
+figure img {
+    width: 300px;
+    top: 100px;
+    left: 200px;
+}
+.m {
+    clear: both;
+}
+nav li {
+    list-style-type: none;
+    padding-left: 0;
+}
+nav a {
+    color: black;
+    background-color: rgb(249, 202, 140);
+    display: block;
+padding: 10px 20px;
+float: left;
+margin-left: 10px;
+border-bottom: thin solid white;
+
+}
+nav ul {
+    padding: 0%;
+}
+nav a:hover {
+    color: rgb(255, 75, 75);
+    background-color: black;
 }
