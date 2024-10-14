@@ -10,7 +10,7 @@ header h1 {
     background-image: url(fishwrapper.jpg);
     background-color: aliceblue;
     background-origin: content-box;
-    background-position: 10px;
+    background-position: 100px;
     background-clip:padding-box;
 border-radius: 3px;
 color: rgb(255, 255, 255);
