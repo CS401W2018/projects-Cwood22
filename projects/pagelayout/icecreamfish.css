@@ -7,14 +7,19 @@ font-size: larger;
 }
 header h1 {
     text-align: center;
+    background-image: url(fishwrapper.jpg);
     background-color: aliceblue;
+    background-origin: content-box;
+    background-position: 10px;
 border-radius: 3px;
-color: rgb(0, 70, 70);
+color: rgb(255, 255, 255);
 margin: 0px;
+text-transform:uppercase;
 }
 header {
     border: 8px solid black;
     border-radius: 10px;
+    text-shadow: 3px 3px 3px black;
 }
 figure {
     border: 10px dotted black;
@@ -26,6 +31,7 @@ figure {
 }
 figure img {
     border-radius: 10px;
+    box-shadow: 2px 2px;
 }
 nav a {
     color: black;
@@ -37,11 +43,13 @@ nav a {
     padding: 5px 20px;
     border-radius: 5px;
     margin-top: 5px;
+    height: fit-content;
 }
 nav a:hover {
     background-color: rgb(252, 45, 87);
     color: aliceblue;
     border-radius: 10px 10px 10px 10px ;
+    text-shadow:2px 2px black;
 }
 .clear {
     clear: both;
@@ -52,5 +60,8 @@ footer {
 p {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: medium;
-
+    line-height: 18px;
+    text-align: center;
+    font-weight: 700;
+    padding-top: 35px;
 }
