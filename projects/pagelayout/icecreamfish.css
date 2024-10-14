@@ -11,6 +11,7 @@ header h1 {
     background-color: aliceblue;
     background-origin: content-box;
     background-position: 10px;
+    background-clip:padding-box;
 border-radius: 3px;
 color: rgb(255, 255, 255);
 margin: 0px;
@@ -56,6 +57,9 @@ nav a:hover {
 }
 footer {
     font-size: small;
+    background-color: rgb(152, 152, 152);
+    width: 110px;
+    color: rgb(0, 0, 0);
 }
 p {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
