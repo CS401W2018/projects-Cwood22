@@ -13,12 +13,7 @@ border-radius: 5px;
 
 }
 .wrapper {
-    width: 900px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 10% 22.5% 22.5% 22.5% 22.5%;
-    grid-template-rows: 300px;
-}
+    width: 900px;  }
 nav {
     margin-top: 0%;
     padding: 0px;
@@ -47,13 +42,28 @@ aside {
     border: dotted  rgb(203, 0, 0) 5px;
     padding-right: 0px;
 }
+aside h2 {
+    text-align: center;
+    font-size: medium;
+    color: antiquewhite;
+}
 figure {
     border: 6px solid black ;
     width: 200px;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    border-radius: 3px;
-
-}
-.item {
-}
+    border-radius: 3px;}
+.content {
+    display: grid;
+    grid-template-columns: 15% 85%;
+    grid-template-rows: ;}
+.containerb {
+    display: grid;
+    grid-template-columns:2fr 2fr 2fr 2fr 2fr 2fr ; }
+    .bottom {
+        color: rgb(163, 163, 163);
+        text-decoration: none;
+    }
+    .bottom:hover {
+        color: aqua;
+    }
