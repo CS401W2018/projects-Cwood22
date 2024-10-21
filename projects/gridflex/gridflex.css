@@ -38,7 +38,6 @@ nav a:hover {
     border-radius: 5px;
 }
 aside {
-    grid-template-columns: auto;
     border: dotted  rgb(203, 0, 0) 5px;
     padding-right: 0px;
 }
@@ -48,15 +47,22 @@ aside h2 {
     color: antiquewhite;
 }
 figure {
+    display: block;
     border: 6px solid black ;
     width: 200px;
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    border-radius: 3px;}
+    font-family: Verdana, Geneva, Tahoma, sans-serif;}
 .content {
     display: grid;
     grid-template-columns: 15% 85%;
-    grid-template-rows: ;}
+
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: left;
+}
 .containerb {
     display: grid;
     grid-template-columns:2fr 2fr 2fr 2fr 2fr 2fr ; }
@@ -65,5 +71,5 @@ figure {
         text-decoration: none;
     }
     .bottom:hover {
-        color: aqua;
+        color: rgb(0, 136, 255);
     }
