@@ -13,7 +13,8 @@ border-radius: 5px;
 
 }
 .wrapper {
-    width: 1000px;  }
+    width: 1000px;  
+margin: auto;}
 nav {
     margin-top: 0%;
     padding: 0px;
