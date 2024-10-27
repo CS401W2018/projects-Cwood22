@@ -2,6 +2,10 @@ body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: medium;
     margin: 0;
+
+}
+.wrapper {
+    width: 1000px;
 }
 header {
     text-align: center;
@@ -30,20 +34,17 @@ nav {
 nav a:hover{
     color: rgb(159, 88, 41);}
 main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-
+    
 }
 .main-content {
     display: grid;
     grid-template-columns: 20% 80%;
-
 }
 figure {
+    display: block;
     margin: auto;
     padding: 10px;
     text-align: center;
 }
-figure img {
+.fullfam{
     width: 100%;}
