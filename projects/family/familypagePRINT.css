@@ -2,14 +2,18 @@ body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: medium;
     margin: 0;
-    background-color: rgb(241, 205, 158);
-font-weight: bold;
+
 }
 .wrapper {
+    width: 900px;
+}
+footer {
+    display: none;
 }
 header {
     text-align: center;
     background-color: rgb(130, 197, 251);
+    display: none;
 }
 header h1 {
     margin: 0;
@@ -17,28 +21,20 @@ header h1 {
     padding-top: 20px;
     font-weight: bolder;
 }
-ul {
-    margin: auto;
-   padding-left: 20px;
-}
-li {
-    font-size: smaller;
-}
-aside {
-    background-color: rgb(191, 162, 124);
-}
 nav a{
     text-decoration: none;
     margin: 0;
     color: rgb(0, 0, 0);
     font-weight: bold;
     font-size: larger;
-    padding: 2px 10px 10px 10px ;
+    margin: auto;
+    height: fit-content;
 }
 nav {
     display: flex;
     justify-content: space-around;
     background-color: rgb(130, 197, 251);
+    display: none;
 }
 nav a:hover{
     color: rgb(159, 88, 41);}
@@ -54,13 +50,11 @@ nav a:hover{
 figure {
     margin: auto;
     padding:5px;
-    text-align: center;
 }
 article {
     border: 3px solid black ;
     border-radius: 5px ;
     width: 210px;
-margin-top: 5px;
 }
 .interior {
     width: 100%;
@@ -75,35 +69,3 @@ margin-top: 5px;
         margin-top: 0;
         padding: 5px;
     }
-    footer {
-        margin: auto;
-        padding: 0 5px 5px 5px ;
-    }
- @media only screen and (max-width: 700px) {
-nav {
-    display: flex;
-    flex-direction: column;
-}
-nav a {
-    border: thin solid rgb(241, 205, 158);
-    border-radius: 5px;
-    text-align: center;
-}
-.main-content {
-    display: flex;
-    flex-direction: column-reverse;
-}
-.flexbox {
-    display: flex;
-    flex-direction: column;
-}
-article {
-    width: 100%;
-}
-img {
-    width: 100%;
-}
-footer {
-    background-color: rgb(191, 162, 124);
-}
- }
