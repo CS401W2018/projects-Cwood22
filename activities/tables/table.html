@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="table.css">
+    <title>Tables</title>
+</head>
+<body>
+    <header>
+<h1>My Schedule</h1>
+    </header>
+    <nav>
+<a href="#">School</a>
+<a href="#">Work</a>
+<a href="$">Space</a>
+    </nav>
+    <main>
+<table class="table">
+    <thead>
+        <tr><th>Dept</th><th>number</th><th>time</th><th>location</th><th>credits</th></tr>
+    </thead>
+<tbody>
+    <tr><td colspan="5">information courses</td></tr>
+    <tr><td>math</td><td>105</td><td>11AM</td><td rowspan="2">online</td><td>6</td></tr>
+    <tr><td>language</td><td>200</td><td>1PM</td><td>5</td></tr>
+    <tr><td colspan="5">Electives</td></tr>
+    <tr><td>ball</td><td>106</td><td>3pm</td><td>online</td><td>none</td></tr>
+    <tr><td>sport</td><td>210</td><td>5pm</td><td>offline</td><td>a few</td></tr>
+</tbody>
+<tfoot>
+    <tr>
+        <th colspan="4" id="totalcredits">total credits</th>
+        <td headers="totalcredits">a lot</td>
+    </tr>
+</tfoot>
+</table>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
