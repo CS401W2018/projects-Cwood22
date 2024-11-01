@@ -1,16 +1,38 @@
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.table {
-    margin: auto;
-    border: thin solid black;
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+nav a {
+    padding: 10px 30px 10px;
+    background-color: antiquewhite;
+    border-radius: 5px;
+    text-decoration: none;
 
 }
-td, th {
+nav a:hover {
+    color: crimson;
+    background-color: black;
+}
+.table {
+    margin: 5px auto;
+    border: thin solid black;
+    border-spacing: 0px;
+    border-collapse: collapse;
+    caption-side: bottom;
+}
+.table td, .table th {
     border: thin solid black;
     text-align: center;
     border-collapse: collapse;
+    padding: 10px;
 }
-thead {
+.table tbody tr:nth-child(even) {
+    background-color: rgb(168, 165, 165);
+}
+.table thead, .table tfoot {
     background-color: aqua;
 }
