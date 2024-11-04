@@ -31,12 +31,42 @@ nav a:hover {
 }
 .maincontent {
     display: flex;
-    flex-direction: column;
-    flex: 2fr 1fr 1fr;
+    flex-direction: row;
+    width: 100% ;
+    justify-content: space-evenly;
+}
+aside {
+    width: 180px;
+    padding: 10px;
+    background-color: rgb(235, 234, 234);
+    border-radius: 0px 0px 10px 10px;
 }
 main {
+    width: 720px;
+}
+table {
+margin: auto;
+margin-top: 40px;
+border: solid thin black ;
+border-spacing: 0px;
+border-collapse: collapse;
+caption-side: bottom;
+}
+table tbody tr:nth-child(even) {
+    background-color: rgb(168, 165, 165);
+}
+table thead, table tfoot {
+    background-color: rgb(190, 236, 237);
+}
+tr, th, td {
+    border: solid thin black;
+    border-spacing: 0px;
 }
 .wrapper {
     width: 900px;
     margin: auto;
+}
+caption {
+    font-weight: bolder;
+
 }
