@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>learnforms</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header>
+<h1>Form design</h1>
+    </header>
+    <nav>
+<a href="#">Form</a>
+<a href="#">Formal</a>
+<a href="#">Informal</a>
+    </nav>
+    <main>
+<form action="processing.html" method="post">
+   First Name <input type="text" name="first" value="Marvin"><br>
+   Last Name <input type="text" name="last" placeholder="Last Name" required="required"><br>
+   Password <input type="password" name="Password"><br>
+   Remember me <input type="checkbox"><br>
+   Class:
+   <input type="radio" value="freshman" name="Class" required>Freshman <br>
+   <input type="radio" value="Sophomore" name="Class">Sophomore <br>
+   <input type="radio" value="Junior" name="Class">Junior <br>
+   <input type="radio" value="Senior" name="Class">Senior <br>
+   Image <input type="image"><br>
+   Fav Color<input type="color" name="favcolor" ><br>
+   <input type="button" value="Press 4 Fun">
+   <input type="submit">
+   Comments:
+   <textarea name="Comments">Put your commment here</textarea> <br>
+   State:<select name="State" id="State">
+    <option value="Blank" selected></option>
+    <option value="Hawaii">Hawaii</option>
+    <option value="Utah">Utah</option>
+    <option value="Colorado">Colorado</option>
+    <option value="California">California</option>
+   </select> <br>
+   How Hungry Are You<input type="Range">
+</form>
+<p>
+    <h2>Engagement Questions
+    </h2>
+</p>
+<ol>
+    <li>
+        The action attribute is the link you are sent to when you click submit on a form.
+    </li>
+    <li>
+        The method is what the browser is trying to do with the page. The get requests gets information and the post request adds information.  
+    </li>
+    <li>
+        Get shows the information in the URL. Get means I want to request or get information.
+        Post means I want to add information to the server. Like logging in, adding name email and password to the server to add something.
+    </li>
+</ol>
+    </main>
+    <footer>
+        <p>&copy; 2024 Caleb Wood</p>
+    </footer>
+</body>
+</html>
