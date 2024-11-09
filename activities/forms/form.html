@@ -17,44 +17,65 @@
     </nav>
     <main>
 <form action="processing.html" method="post">
-   First Name <input type="text" name="first" value="Marvin"><br>
-   Last Name <input type="text" name="last" placeholder="Last Name" required="required"><br>
-   Password <input type="password" name="Password"><br>
-   Remember me <input type="checkbox"><br>
-   Class:
-   <input type="radio" value="freshman" name="Class" required>Freshman <br>
-   <input type="radio" value="Sophomore" name="Class">Sophomore <br>
-   <input type="radio" value="Junior" name="Class">Junior <br>
-   <input type="radio" value="Senior" name="Class">Senior <br>
-   Image <input type="image"><br>
-   Fav Color<input type="color" name="favcolor" ><br>
-   <input type="button" value="Press 4 Fun">
-   <input type="submit">
-   Comments:
-   <textarea name="Comments">Put your commment here</textarea> <br>
-   State:<select name="State" id="State">
+    <fieldset>
+        <legend>
+            SIGN UP
+        </legend>
+<div class="form-row">
+   <label for="fname">First Name:</label>
+   <input type="text" id="fname" name="first" placeholder="First name" required>
+</div>
+<div class="form-row">
+ <label for="lname">Last Name:</label>
+ <input type="text" id="lname" name="last" placeholder="Last Name" required="required">
+</div>
+<div class="form-row">
+    <label for="pass">Password:</label>
+   <input type="password" name="pass" id="pass">
+</div>
+<div class="check-row">
+    <div class="spacer"></div>
+    <label for="cbox">
+    <input type="checkbox" name="cbox">
+    Remember me
+    </label>
+</div>
+<div class="form-row">
+<label for="comments">Comments:</label>
+<textarea name="comments" id="comments"></textarea>
+</div>
+<div class="check-row">
+   <div class="spacer">Class:</div>
+   <label><input type="radio" value="freshman" name="Class" required="required">Freshman</label>
+   <label><input type="radio" value="Senior" name="Class">Senior</label>
+</div>
+<div class="form-row">
+    <label for="State">State:</label>
+   <select name="State" id="State">
     <option value="Blank" selected></option>
     <option value="Hawaii">Hawaii</option>
     <option value="Utah">Utah</option>
     <option value="Colorado">Colorado</option>
     <option value="California">California</option>
-   </select> <br>
-   How Hungry Are You<input type="Range">
+   </select> 
+</div>
+<div class="form-row">
+    <div class="spacer"></div>
+    <input type="submit" value="Press me!">
+</div>
+</fieldset>
 </form>
 <p>
-    <h2>Engagement Questions
+    <h2>Engagement Questions 11/08
     </h2>
 </p>
 <ol>
     <li>
-        The action attribute is the link you are sent to when you click submit on a form.
+        You can style your form by adding background to the inputs, you can align them using flex, you can add fieldset and a legend.
+        You can use css to do the sypical things like background colors, font colors etc. 
     </li>
     <li>
-        The method is what the browser is trying to do with the page. The get requests gets information and the post request adds information.  
-    </li>
-    <li>
-        Get shows the information in the URL. Get means I want to request or get information.
-        Post means I want to add information to the server. Like logging in, adding name email and password to the server to add something.
+        Brother Slade likes flex becuase it gives the children tags control over their size and then makes it easier to make the page mobile friendly too.
     </li>
 </ol>
     </main>
