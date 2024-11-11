@@ -46,6 +46,11 @@ legend {
 form {
     margin: 10px;
     width: auto;
+    color: black;
+    font-weight: bold;
+}
+fieldset {
+    background-color: #fab387;
 }
 .form-row, .check-row {
 display: flex;
