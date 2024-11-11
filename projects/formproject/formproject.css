@@ -36,22 +36,56 @@ footer p {
     padding: 10px;
 }
 legend {
-    background-color: lightskyblue;
+    background-color: rgb(255, 210, 74);
     color: black;
     font-weight: bolder;
-    border: solid 2px lightskyblue;
+    border: solid 2px rgb(255, 210, 74);
     border-radius: 3px;
-    padding: 5px;
+    padding: 6px 20px 6px 20px;
 }
 form {
     margin: 10px;
     width: auto;
 }
-.form-row {
+.form-row, .check-row {
 display: flex;
 gap: 10px;
 margin-top: 5px;
 }
 .form-row label {
-    
+width: 150px;
+text-align: right;
+}
+input[type="submit"] {
+    background-color: rgb(0, 195, 26);
+    color: rgb(0, 0, 0);
+    padding: 5px 10px 5px 10px; }
+    input:not([type="submit"]), select, textarea {
+        padding: 10px;
+        font-size: 1.2em;
+        background-color: #ffffff;
+        border-radius: 5px;
+    }
+    @media only screen and (max-width: 600px) {
+        .form-row, .check-row {
+            flex-direction: column;
+        }
+        .form-row label, .spacer {
+            text-align: left;
+        }
+        input[type=submit] {
+            padding: 10px 5px 10px 5px;
+            font-size: larger;
+            font-weight: bold;
+        }
+    }
+.spacer {
+    width: 150px;
+    text-align: right;
+}
+#promotional {
+    font-size: 12px;
+}
+#cbox {
+    width: 12px;
 }
