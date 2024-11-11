@@ -25,7 +25,7 @@ nav a{
     font-weight: bold;
 }
 nav a:hover {
-    color: darkgreen;
+    color: rgb(0, 142, 0);
 }
 footer {
     background-color: darkgray;
@@ -34,4 +34,24 @@ footer {
 }
 footer p {
     padding: 10px;
+}
+legend {
+    background-color: lightskyblue;
+    color: black;
+    font-weight: bolder;
+    border: solid 2px lightskyblue;
+    border-radius: 3px;
+    padding: 5px;
+}
+form {
+    margin: 10px;
+    width: auto;
+}
+.form-row {
+display: flex;
+gap: 10px;
+margin-top: 5px;
+}
+.form-row label {
+    
 }
