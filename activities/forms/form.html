@@ -16,7 +16,7 @@
 <a href="#">Informal</a>
     </nav>
     <main>
-<form action="processing.html" method="post">
+<form action="processing.html" method="post" id="myform">
     <fieldset>
         <legend>
             SIGN UP
@@ -31,12 +31,12 @@
 </div>
 <div class="form-row">
     <label for="pass">Password:</label>
-   <input type="password" name="pass" id="pass">
+   <input type="number" name="pass" id="pass">
 </div>
 <div class="check-row">
     <div class="spacer"></div>
     <label for="cbox">
-    <input type="checkbox" name="cbox">
+    <input type="checkbox" name="cbox" id="cbox">
     Remember me
     </label>
 </div>
@@ -61,26 +61,59 @@
 </div>
 <div class="form-row">
     <div class="spacer"></div>
-    <input type="submit" value="Press me!">
+    <input type="submit" value="Press me!" id="submit">
 </div>
 </fieldset>
 </form>
 <p>
-    <h2>Engagement Questions 11/08
+    <h2>Engagement Questions 11/13
     </h2>
+    What is JavaScript? How did it get its name?
+What are the two ways you can run JavaScript?
+What was the most popular front-end js library?
+What is the most popular front-end js library today?
 </p>
 <ol>
     <li>
-        You can style your form by adding background to the inputs, you can align them using flex, you can add fieldset and a legend.
-        You can use css to do the sypical things like background colors, font colors etc. 
+        JavaScript is another programming language created by a guy form Sun Microsystems. Javascript is a programming language that runs inside the browser.
+        The name was a marketing ploy to try to pull Java, which was really popular, into the web.
     </li>
     <li>
-        Brother Slade likes flex becuase it gives the children tags control over their size and then makes it easier to make the page mobile friendly too.
+        The two ways you can run JavaScript are 1. In the DOM or browser, and 2. Node.js. 
+    </li>
+    <li>
+        The most popular front-end JavaScript library was Jquery.js.
+    </li>
+    <li>
+        The most popular front-end JavaScript library today is React.js
     </li>
 </ol>
     </main>
     <footer>
         <p>&copy; 2024 Caleb Wood</p>
     </footer>
+    <script>
+        document.getElementById('myform').addEventListener('submit',function(event){
+            event.preventDefault();
+            const first = document.getElementById('fname').value;
+            const last = document.getElementById('lname').value;
+            const password = document.getElementById('pass').value;
+            if (!first || !last) {
+                alert("You need a first and last name.")
+                return;
+            }
+            if (!pass || pass < 18) {
+                alert ("Your password must be 18 or older")
+                return;
+            }
+            const formdata = {
+                fname: first,
+                lname: last,
+                pass: pass
+            }
+            console.log(formdata)
+            alert("Form Submitted");
+        })
+    </script>
 </body>
 </html>
