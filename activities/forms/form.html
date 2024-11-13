@@ -31,7 +31,11 @@
 </div>
 <div class="form-row">
     <label for="pass">Password:</label>
-   <input type="number" name="pass" id="pass">
+   <input type="password" name="pass" id="pass">
+</div>
+<div class="form-row">
+    <label for="age">Age:</label>
+   <input type="number" name="age" id="age">
 </div>
 <div class="check-row">
     <div class="spacer"></div>
@@ -68,10 +72,6 @@
 <p>
     <h2>Engagement Questions 11/13
     </h2>
-    What is JavaScript? How did it get its name?
-What are the two ways you can run JavaScript?
-What was the most popular front-end js library?
-What is the most popular front-end js library today?
 </p>
 <ol>
     <li>
@@ -98,20 +98,21 @@ What is the most popular front-end js library today?
             const first = document.getElementById('fname').value;
             const last = document.getElementById('lname').value;
             const password = document.getElementById('pass').value;
+            const age = document.getElementById('age').value;
             if (!first || !last) {
                 alert("You need a first and last name.")
                 return;
             }
-            if (!pass || pass < 18) {
-                alert ("Your password must be 18 or older")
+            if (!age || age < 18) {
+                alert ("Your must be 18 or older");
                 return;
             }
-            const formdata = {
+            const formData = {
                 fname: first,
                 lname: last,
-                pass: pass
+                age: age,
             }
-            console.log(formdata)
+            console.log(formData)
             alert("Form Submitted");
         })
     </script>
