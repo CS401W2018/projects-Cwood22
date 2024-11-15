@@ -16,6 +16,7 @@
 <a href="#">Informal</a>
     </nav>
     <main>
+        <div id="message"></div>
 <form action="processing.html" method="post" id="myform">
     <fieldset>
         <legend>
@@ -70,51 +71,22 @@
 </fieldset>
 </form>
 <p>
-    <h2>Engagement Questions 11/13
+    <h2>Engagement Questions 11/15
     </h2>
 </p>
 <ol>
     <li>
-        JavaScript is another programming language created by a guy form Sun Microsystems. Javascript is a programming language that runs inside the browser.
-        The name was a marketing ploy to try to pull Java, which was really popular, into the web.
+        AJAX is 
     </li>
     <li>
         The two ways you can run JavaScript are 1. In the DOM or browser, and 2. Node.js. 
-    </li>
-    <li>
-        The most popular front-end JavaScript library was Jquery.js.
-    </li>
-    <li>
-        The most popular front-end JavaScript library today is React.js
     </li>
 </ol>
     </main>
     <footer>
         <p>&copy; 2024 Caleb Wood</p>
     </footer>
-    <script>
-        document.getElementById('myform').addEventListener('submit',function(event){
-            event.preventDefault();
-            const first = document.getElementById('fname').value;
-            const last = document.getElementById('lname').value;
-            const password = document.getElementById('pass').value;
-            const age = document.getElementById('age').value;
-            if (!first || !last) {
-                alert("You need a first and last name.")
-                return;
-            }
-            if (!age || age < 18) {
-                alert ("Your must be 18 or older");
-                return;
-            }
-            const formData = {
-                fname: first,
-                lname: last,
-                age: age,
-            }
-            console.log(formData)
-            alert("Form Submitted");
-        })
+    <script src="form.js">
     </script>
 </body>
 </html>
