@@ -1,10 +1,9 @@
 
 document.getElementById('myform').addEventListener('submit',function(event){
     event.preventDefault();
-    const first = document.getElementById('fname').value;
-    const last = document.getElementById('lname').value;
-    const password = document.getElementById('pass').value;
-    const age = document.getElementById('age').value;
+    const first = document.getElementById("fname").value;
+    const last = document.getElementById("lname").value;
+    const age = document.getElementById("age").value;
     if (!first || !last) {
         alert("You need a first and last name.")
         return;
@@ -14,10 +13,10 @@ document.getElementById('myform').addEventListener('submit',function(event){
         return;
     }
     const formData = {
-        fname: first,
-        lname: last,
+        fname: fname,
+        lname: lname,
         age: age,
-        Pass: password,
+        pass: document.getElementById('pass').value,
     }
     const xhr = new XMLHttpRequest();
     xhr.open("POST", "submit.json", true);
@@ -26,11 +25,11 @@ document.getElementById('myform').addEventListener('submit',function(event){
         if (xhr.readystate === 4 && xhr.status === 200) {
             const response = JSON.parse(xhr.response);
             document.getElementById('message').innerHTML = response.message;
+            document.getElementById('myform').innerHTML = "";
+        } else if (xhr.readystate === 4) {
+            alert('Error submitting form.');
         }
-        else if (xhr.readystate === 4) {
-            alert('Error submitting form.')
-        }
-    }
+    };
     xhr.send(JSON.stringify(formData));
     console.log(formData);
-})
+});
