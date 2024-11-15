@@ -22,7 +22,7 @@ document.getElementById('myform').addEventListener('submit',function(event){
     xhr.open("POST", "submit.json", true);
     xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
     xhr.onreadystatechange = function () {
-        if (xhr.readystate === 4 && xhr.status === 200) {
+        if (xhr.readyState === 4 && xhr.status === 200) {
             const response = JSON.parse(xhr.response);
             document.getElementById('message').innerHTML = response.message;
             document.getElementById('myform').innerHTML = "";
