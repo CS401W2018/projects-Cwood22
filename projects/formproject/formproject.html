@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Project</title>
     <link rel="stylesheet" href="formproject.css">
+    <link rel="icon" href="../phototour/W.ico">
 </head>
 <body>
     <header>
@@ -16,7 +17,8 @@
         <a href="#">Our Purpose</a>
     </nav>
     <main>
-        <form action="processing.html" method="post">
+        <div id="message"></div>
+        <form action="processing.html" method="post" id="formproject">
             <fieldset>
                 <legend>
                     Join!
@@ -45,6 +47,10 @@
                     <label for="phone">Phone #:</label>
                     <input type="tel" id="phone" name="phone" placeholder="800-123-4567">
                 </div>
+                <div class="form-row">
+                    <label for="favnumber">Favorite number:</label>
+                    <input type="number" id="favnumber" name="favnumber" placeholder="22">
+                </div>
                 <div class="check-row">
                     <div class="spacer" id="employ">Employment Status:</div>
                     <label><input type="radio" value="employed" name="employer" checked>Employed</label>
@@ -60,7 +66,7 @@
                 </div>
                 <div class="form-row">
                     <div class="spacer"></div>
-                    <input type="submit" name="submit" value="Finish">
+                    <input type="submit" name="submit" value="Finish" id="submit">
                 </div>
 
             </fieldset>
@@ -69,5 +75,7 @@
     <footer>
         <p>&copy; Caleb Wood 2024</p>
     </footer>
+    <script src="formproject.js">
+    </script>
 </body>
 </html>
