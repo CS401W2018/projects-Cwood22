@@ -163,3 +163,23 @@ input[type="submit"] {
 #woodcircle figcaption {
     margin: 20px;
 }
+.table {
+    margin: 5px auto;
+    border: thin solid black;
+    border-spacing: 0px;
+    border-collapse: collapse;
+    caption-side: top;
+    
+}
+.table td, .table th {
+    border: thin solid black;
+    text-align: center;
+    border-collapse: collapse;
+    padding: 10px;
+}
+.table tbody tr:nth-child(even) {
+    background-color: rgb(168, 165, 165);
+}
+.table thead, .table tfoot {
+    background-color: #926be3;
+}
