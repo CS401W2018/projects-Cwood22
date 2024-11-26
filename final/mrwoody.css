@@ -54,3 +54,50 @@ nav a:hover {
     margin: 20px 10px 10px 10px;
     text-align: center;
 }
+#communityform {
+    margin: auto;
+    padding: 10px;
+}
+#communityimage {
+    font-size: small;
+    
+}
+legend {
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    font-weight: bolder;
+    background-color: #009ffb;
+    box-shadow: black 2px 2px 2px 2px;
+}
+.form-row, .check-row {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+.form-row label {
+    width: 125px;
+    text-align: right;
+}
+.formspacer {
+    width: 125px;
+    text-align: right;
+}
+input[type="submit"] {
+    background-color: #ff5c5c;
+    font-size: larger;
+    color: rgb(0, 0, 0);
+    padding: 20px 60px 20px 60px;
+    border-radius: 5px; 
+    margin-left: 125px;
+    font-weight: bold;
+}
+
+    input:not([type="submit"]), select, textarea {
+        padding: 10px;
+        font-size: 1.2em;
+        background-color: #ddd;
+        border-radius: 5px;
+        border: 0;
+        border-bottom: thin solid black;
+    }

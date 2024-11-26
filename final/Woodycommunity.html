@@ -14,24 +14,73 @@
     </header>
     <nav>
 <a href="MrWoodyHQ.html">Home</a>
-<a href="#">Work</a>
-<a href="#">work</a>
-<a href="#">work</a>
-<a href="#">work</a>
 <a href="Woodycommunity.html">Community</a>
-<a href="#">About</a>
-<form action="submit" id="navsearch">
+<a href="#">Blank</a>
+<a href="#">Blank</a>
+<a href="#">Blank</a>
+<a href="#">Blank</a>
+<a href="Aboutwoody.html">About</a>
+<form action="submit" id="navsearch" method="get">
 <input type="text" placeholder="Search" name="searchbar" id="searchbar">
 <button type="submit" id="searchbutton"><img src="Searchicon.png" alt="search magnifying glass"></button>
 </form>
     </nav>
+
     </div>
     <div class="maincontent">
     <aside>
 
     </aside>
     <main>
-
+        <form action="processing.html" method="post" id="communityform">
+            <fieldset>
+                <legend>
+                    Community Showcase!
+                </legend>
+        <div class="form-row">
+           <label for="fname">First Name:</label>
+           <input type="text" id="fname" name="first" placeholder="First name" required>
+        </div>
+        <div class="form-row">
+         <label for="lname">Last Name:</label>
+         <input type="text" id="lname" name="last" placeholder="Last Name" required="required">
+        </div>
+        <div class="check-row">
+           <div class="formspacer">Category:</div>
+           <label>Post<input type="radio" value="comment" name="" required="required"></label>
+           <label>Comment<input type="radio" value="post" name=""></label>
+        </div>
+        <div class="form-row">
+            <label for="legotype">Brand Type:</label>
+           <select name="legotype" id="legotype">
+            <option value="Blank" selected></option>
+            <option value="legostarwars">LEGO Star Wars</option>
+            <option value="legominecraft">LEGO Minecraft</option>
+            <option value="legomarvel">LEGO Marvel</option>
+            <option value="legoharrypotter">LEGO Harry Potter</option>
+            <option value="legocity">LEGO City</option>
+            <option value="legobotanical">LEGO Botanical</option>
+            <option value="legoother">LEGO Other</option>
+           </select> 
+        </div>
+        <div class="form-row">
+            <label for="communitytitle">Title:</label>
+            <input type="text" id="communitytitle" name="communitytitle" placeholder="World's Best Moc">
+         </div>
+        <div class="form-row">
+            <label for="communityimage">Images:</label>
+            <input type="file" name="communityimage" id="communityimage">
+        </div>
+        <div class="form-row">
+        <label for="comments">Comments:</label>
+        <textarea name="comments" id="comments"></textarea>
+        </div>
+        <div class="form-row">
+            <div class="spacer"></div>
+            <input type="submit" value="Finish" id="submit">
+        </div>
+        </fieldset>
+        </form>
     </main>
     </div>
     <footer>
