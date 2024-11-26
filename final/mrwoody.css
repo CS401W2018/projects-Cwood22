@@ -17,10 +17,31 @@ body {
     padding: 10px 10px 10px 10px;
 
 }
+.current {
+    color: #8e8e8e;
+    text-decoration: underline;
+}
 #logo {
     width: 100%;
 }
-
+main {
+    width: 80%;
+}
+aside {
+    width: 20%;
+    background-color: #b3b1b1;
+    border: 2px black solid;
+    border-radius: 20px;
+    margin: 5px;
+    text-align: center;
+    font-size: 11px;
+}
+aside p {
+    margin: auto;
+    padding: 5px;
+    width: 90%;
+    text-align: left;
+}
 nav {
     width: 100%;
     display: flex;
@@ -34,9 +55,11 @@ nav a {
     color: white;
     text-decoration: none;
     font-size: large;
+    transition: 0.4s ease-in-out transform;
 }
 nav a:hover {
     color: #faaf00;
+    transform: scale(1.1);
 }
 #navsearch {
     display: flex;
@@ -58,21 +81,22 @@ nav a:hover {
     display: flex;
     flex-direction: row;
 }
-aside {
-    width: 20%;
-    background-color: #b3b1b1;
-    border: 2px black solid;
-    border-radius: 20px;
-    margin: 5px;
-    text-align: center;
-    font-size: smaller;
+.sidelabel {
+    font-size: larger;
+    font-weight: bold;
+    background-color: #009ffb;
+    border-radius: 100px;
+    padding: 10px;
+    margin: 10px;
+    transition: 0.4s ease-in-out transform;
 }
-p {
-    width: 100%;
-    
+.sidelabel:hover {
+    transform: scale(1.1);
 }
-main {
-    width: 80%;
+iframe {
+    width: 320px;
+    height: 180px;
+    border: 0;
 }
 #communityform {
     margin: auto;
@@ -115,9 +139,27 @@ input[type="submit"] {
 
     input:not([type="submit"]), select, textarea {
         padding: 10px;
-        font-size: 1.2em;
-        background-color: #ddd;
+        font-size: 20px;
+        background-color: #dcdcdc;
         border-radius: 5px;
         border: 0;
-        border-bottom: thin solid black;
+        border-bottom: 2px solid black;
     }
+#homeintro {
+    text-align: center;
+    border: #ff5c5c 6px solid;
+    border-radius: 5px;
+    margin: 5px;
+}
+#woodcircle img {
+    border-radius: 200px;
+    width: 100%;
+    display: block;
+}
+#woodcircle {
+    display: flex;
+    margin: 5px;
+}
+#woodcircle figcaption {
+    margin: 20px;
+}
