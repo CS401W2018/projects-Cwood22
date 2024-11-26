@@ -54,13 +54,33 @@ nav a:hover {
     margin: 20px 10px 10px 10px;
     text-align: center;
 }
+.maincontent {
+    display: flex;
+    flex-direction: row;
+}
+aside {
+    width: 20%;
+    background-color: #b3b1b1;
+    border: 2px black solid;
+    border-radius: 20px;
+    margin: 5px;
+    text-align: center;
+    font-size: smaller;
+}
+p {
+    width: 100%;
+    
+}
+main {
+    width: 80%;
+}
 #communityform {
     margin: auto;
     padding: 10px;
 }
 #communityimage {
     font-size: small;
-    
+
 }
 legend {
     color: black;
