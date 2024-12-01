@@ -17,7 +17,7 @@ body {
     padding: 10px 10px 10px 10px;
 
 }
-ul, li {
+nav ul, nav li {
     list-style: none;
     display: inline-flex;
     margin: 0;
@@ -188,6 +188,81 @@ input[type="submit"] {
 }
 .table thead, .table tfoot {
     background-color: #926be3;
+}
+footer {
+    border-top: #5b5b5b solid 3px;
+    border-radius: 15px;
+    display: flex;
+width: 100%;
+height: auto;
+justify-content: left;
+}
+.footertitle {
+    display: block;
+    margin: 10px;
+}
+.copyright {
+font-size: small;
+}
+.socialpages {
+    display: flex;
+}
+.socialpages a {
+    display: block;
+    margin-top: 5px;
+    padding: 10px 10px 10px 10px;
+}
+.footerlinks {
+    display: block;
+    margin-top: 5px;
+    padding: 10px 10px 10px 10px;
+}
+.storefront {
+    padding: 10px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 1px;
+}
+.shopitem {
+    display: block;
+    border: thin black solid;
+    border-radius: 10px;
+    box-shadow: 1px 3px 3px 0px;
+    transition: 0.4s ease-in-out transform;
+}
+.shopitem:hover {
+    transform: scale(1.1);
+    box-shadow: 1px 3px 3px 0px;
+}
+.shopitem img {
+    width: 100%;
+}
+.itemdescription {
+    text-align: center;
+}
+.itemdescription h3 {
+    margin: 0;
+    padding: 0px;
+}
+#gettingstarted img {
+    width: 100%;
+    flood-opacity: 30%;
+    opacity: 75%;
+    border: #5b5b5b thin solid;
+    border-radius: 10px;
+    box-shadow: #ff5c5c 3px 3px;
+
+}
+.spacer {
+    margin: 5px;
+    padding: 10px;
+}
+.equipmentlist {
+    display: block;
+    list-style-image: url(MrWoodyLOGOTINY.png);
+    padding: 10px;
+    margin: 50px;
 }
 @media only screen and (max-width: 700px) {
     header {
