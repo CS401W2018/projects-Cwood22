@@ -76,12 +76,14 @@ nav a:hover {
     margin: 10px 2px 10px 0px;
     background-color: #5b5b5b;
     border: none;
+    display: none;
 }
 #searchbar {
     display: block;
     height: 50px;
     margin: 20px 10px 10px 10px;
     text-align: center;
+    display: none;
 }
 .maincontent {
     display: flex;
@@ -100,8 +102,6 @@ nav a:hover {
     transform: scale(1.1);
 }
 iframe {
-    width: 320px;
-    height: 180px;
     border: 0;
 }
 #communityform {
@@ -249,9 +249,8 @@ font-size: small;
     width: 100%;
     flood-opacity: 30%;
     opacity: 75%;
-    border: #5b5b5b thin solid;
-    border-radius: 10px;
-    box-shadow: #ff5c5c 3px 3px;
+    border-radius: 15px;
+    border:  #ff5c5c 5px solid;
 
 }
 .spacer {
@@ -263,6 +262,46 @@ font-size: small;
     list-style-image: url(MrWoodyLOGOTINY.png);
     padding: 10px;
     margin: 50px;
+}
+.embeded {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.embeded iframe {
+    width: 100%;
+}
+#uploads {
+    background-color: #faaf00;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 5px;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px; 
+}
+
+#uploads h3 {
+    background-color: #009ffb;
+    border-radius: 50px;
+    margin: 10px;
+    padding: 10px;
+}
+.monthlyupdate {
+    text-align: center;
+    background-color: #faaf00;
+    width: 80%;
+    display: block;
+    margin: auto;
+    border: #faaf00 20px solid;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+#homepagemain {
+    display: flex;
+    flex-direction: column;
 }
 @media only screen and (max-width: 700px) {
     header {
