@@ -18,7 +18,7 @@
     <li><a href="Woodycommunity.html" class="current">Community</a></li>
     <li><a href="mrwoodyshop.html">Shop</a></li>
     <li><a href="mrwoodytips.html">Tips</a></li>
-    <li><a href="#">Newsroom</a></li>
+    <li><a href="mrwoodynewsroom.html">Newsroom</a></li>
     <li><a href="#">Blank</a></li>
     <li><a href="Aboutwoody.html">About</a></li>
     </ul>
@@ -42,6 +42,7 @@
         <div class="communityposts">
             <h2>Latest posts here!</h2>
         </div>
+        <div id="communitymessage"></div>
         <form action="processing.html" method="post" id="communityform">
             <fieldset>
                 <legend>
@@ -57,8 +58,8 @@
         </div>
         <div class="check-row">
            <div class="formspacer">Category:</div>
-           <label>Post<input type="radio" value="comment" name="" required="required"></label>
-           <label>Comment<input type="radio" value="post" name=""></label>
+           <label>Post<input type="radio" value="comment" name="category" required="required" id="post"></label>
+           <label>Comment<input type="radio" value="post" name="category"></label>
         </div>
         <div class="form-row">
             <label for="legotype">Brand Type:</label>
@@ -71,6 +72,10 @@
             <option value="legocity">LEGO City</option>
             <option value="legobotanical">LEGO Botanical</option>
             <option value="legoother">LEGO Other</option>
+            <option value="megahalo">MEGA Halo</option>
+            <option value="megacod">MEGA Call of Duty</option>
+            <option value="megapokemon">MEGA Pokemon</option>
+            <option value="megaother">MEGA Other</option>
            </select> 
         </div>
         <div class="form-row">
@@ -96,5 +101,6 @@
     <footer>
         &copy; MrWoody LLC 2024, All rights reserved
     </footer>
+    <script src="MrWoodyHQ.js"></script>  
 </body>
 </html>
