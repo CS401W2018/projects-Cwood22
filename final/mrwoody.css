@@ -7,7 +7,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: left;
-    background-color:#5b5b5b;
+    background-color: #5b5b5b;
     margin: 0;
 }
 #nav_logo {
@@ -24,7 +24,7 @@ nav ul, nav li {
     padding: 0;
 }
 .current {
-    color: #8e8e8e;
+    color: #cccccc;
     text-decoration: underline;
     text-decoration-thickness: 5px;
     text-underline-offset: 8px;
@@ -316,17 +316,27 @@ font-size: small;
 #homepagemain {
     display: flex;
     flex-direction: column;
+
 }
 #newsroommain {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: auto;
+    flex-direction: column;
+    margin: 10px;
 }
 .newscard {
     width: 100%;
+    display: flex;
+    border: #ff5c5c 5px solid;
+    margin: 20px;
+    padding: 10px;
 }
-.newscard img {
+.newscard p {
+    width: 50%;
+}
+.newsimage{
+    width: 100%
+}
+.newsimage img {
     width: 100%;
 }
 @media only screen and (max-width: 700px) {
