@@ -48,7 +48,7 @@ aside {
     text-align: center;
     font-size: 24px;
 }
-#sidelabel-icon {
+.sidelabel-icon {
     width: 100%;
     opacity: 50%;
 }
@@ -389,6 +389,9 @@ font-size: small;
     width: 100%;
     display: flex;
     flex-direction: column;
+}
+#newsbanner {
+    width: 100%;
 }
 .newscard, .newscard2 {
     display: flex;
