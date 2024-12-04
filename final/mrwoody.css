@@ -6,9 +6,11 @@ body {
 .headnav {
     display: flex;
     flex-direction: row;
-    justify-content: left;
     background-color: #5b5b5b;
     margin: 0;
+}
+header {
+    width: 15%;
 }
 #nav_logo {
     width: 75px;
@@ -44,7 +46,11 @@ aside {
     border-radius: 20px;
     margin: 5px;
     text-align: center;
-    font-size: 11px;
+    font-size: 24px;
+}
+#sidelabel-icon {
+    width: 100%;
+    opacity: 50%;
 }
 aside p {
     margin: auto;
@@ -53,10 +59,10 @@ aside p {
     text-align: left;
 }
 nav {
-    width: 100%;
+    width: 85%;
     display: flex;
     text-align: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 nav a {
     margin: auto;
@@ -114,10 +120,17 @@ iframe {
 #communityform {
     margin: auto;
     padding: 10px;
+    font-size: larger;
 }
 #communityimage {
     font-size: small;
-
+}
+.communityposts {
+    text-align: center;
+    background-image: linear-gradient(#5b5b5b 10%,#926be3 90%);
+    padding: 5px;
+    font-size: 24px;
+    border-bottom-left-radius: 15px;
 }
 legend {
     color: black;
@@ -126,6 +139,7 @@ legend {
     font-weight: bolder;
     background-color: #009ffb;
     box-shadow: black 2px 2px 2px 2px;
+    font-size: larger;
 }
 .form-row, .check-row {
     display: flex;
@@ -160,9 +174,11 @@ legend {
     }
 #homeintro {
     text-align: center;
-    border: #ff5c5c 6px solid;
+    border: #ff5c5c 8px solid;
     border-radius: 5px;
     margin: 5px;
+    font-size: 24px;
+    background-color: #ff5c5c;
 }
 #woodcircle img {
     border-radius: 200px;
@@ -224,19 +240,24 @@ font-size: small;
     margin-top: 5px;
     padding: 10px 10px 10px 10px;
 }
+.maincontent-store {
+    background-color: #bcafd8;
+}
 .storefront {
     padding: 10px;
     width: 100%;
     display: grid;
-    grid-template-columns: auto auto auto auto;
-    gap: 1px;
+    grid-template-columns: Auto Auto Auto;
+    justify-content: space-evenly;
 }
 .shopitem {
     display: block;
-    border: thin black solid;
+    border: 3px #faaf00 solid;
     border-radius: 10px;
     box-shadow: 1px 3px 3px 0px;
     transition: 0.4s ease-in-out transform;
+    width: 400px;
+    background-color: white;
 }
 .shopitem:hover {
     transform: scale(1.1);
@@ -244,6 +265,8 @@ font-size: small;
 }
 .shopitem img {
     width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 .itemdescription {
     text-align: center;
@@ -311,13 +334,16 @@ font-size: small;
     background-color: #926be3;
 }
 .embeded {
-    display: grid;
-    grid-template-columns: auto auto auto;
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-around;
 }
 .embeded iframe {
-    width: 100%;
-    height: 150px;
+    width: 560px;
+    height: 315px;
     transition: 0.4s ease-in-out transform;
+    margin: 2px;
 }
 .embeded iframe:hover {
     transform: scale(1.1);
@@ -339,6 +365,7 @@ font-size: small;
     border-radius: 50px;
     margin: 10px;
     padding: 10px;
+    font-size: 30px;
 }
 .monthlyupdate {
     text-align: center;
@@ -352,36 +379,35 @@ font-size: small;
     margin-bottom: 20px;
     margin-top: 20px;
     font-weight: bold;
+    font-size: 20px;
 }
 #homepagemain {
     display: flex;
     flex-direction: column;
-
 }
 #newsroommain {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    margin: 10px;
 }
-.newscard {
-    width: 100%;
+.newscard, .newscard2 {
     display: flex;
-    border: #ff5c5c 5px solid;
-    margin: 20px;
-    padding: 10px;
+    font-size: 25px;
+    padding: 5px;
 }
-.newscard p {
-    width: 50%;
+.newscard p, .newscard2 p {
+    width: 75%;
+    font-weight: bold;
+    padding: 3px;
+}
+.newscard2 {
+    background-color: #afe0fc;
 }
 .newsimage{
-    width: 100%
-}
-.newsimage img {
-    width: 100%;
+    width: 25%;
 }
 .gettingstarted {
     text-align: center;
-    font-size: medium;
     font-style: italic;
 }
 .gettingstarted a {
@@ -399,6 +425,14 @@ font-size: small;
 }
 .resource-cards {
     display: flex;
+}
+@media only screen and (max-width: 1500px) {
+    .storefront {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 @media only screen and (max-width: 700px) {
     header {
