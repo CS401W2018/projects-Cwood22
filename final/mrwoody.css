@@ -396,7 +396,9 @@ font-size: small;
 #banner-image {
     width: 100%;
     opacity: 85%;
-
+}
+.resource-cards {
+    display: flex;
 }
 @media only screen and (max-width: 700px) {
     header {
