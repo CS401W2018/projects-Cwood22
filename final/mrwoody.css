@@ -140,7 +140,7 @@ legend {
     width: 125px;
     text-align: right;
 }
-.communityform input[type="submit"] {
+.communityform, input[type="submit"] {
     background-color: #ff5c5c;
     font-size: larger;
     color: rgb(0, 0, 0);
@@ -150,7 +150,7 @@ legend {
     font-weight: bold;
 }
 
-.communityform input:not([type="submit"]), select, textarea {
+.communityform, input:not([type="submit"]), select, textarea {
         padding: 10px;
         font-size: 20px;
         background-color: #dcdcdc;
@@ -252,23 +252,63 @@ font-size: small;
     margin: 0;
     padding: 0px;
 }
-#gettingstarted img {
+.gettingstarted img {
     width: 100%;
     flood-opacity: 30%;
     opacity: 75%;
     border-radius: 15px;
     border:  #ff5c5c 5px solid;
-
+}
+.article-background {
+    background-color: #fcedca;
+    border-radius: 5px;
+    padding: 10px;
+    margin: auto;
+}
+.article-background p {
+    padding: 10px;
+}
+.article-background h1, .article-background h5 {
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+}
+.article-background h5 {
+    background-color: #b19fd3;
+    font-size: larger;
+}
+.article-background a {
+    text-decoration: none;
+    color: #ff5c5c;
+    text-shadow: black 0.5px 0.25px;
+    transition: ease-in 0.5s;
 }
 .spacer {
-    margin: 5px;
-    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+#equipment-tips {
+    text-align: center;
 }
 .equipmentlist {
-    display: block;
-    list-style-image: url(MrWoodyLOGOTINY.png);
-    padding: 10px;
-    margin: 50px;
+    text-align: center;
+    font-size: larger;
+    background-color: #ffabab;  
+    margin: auto;
+    border: thin solid black;
+    border-spacing: 0px;
+    border-collapse: collapse;
+    font-weight: 300;
+}
+.equipmentlist td, .equipmentlist th {
+        border: thin solid black;
+        padding: 10px 100px;
+}
+.equipmentlist tbody tr:nth-child(even){
+    background-color: #fa7b7b;
+}
+.equipmentlist thead {
+    background-color: #926be3;
 }
 .embeded {
     display: grid;
@@ -338,6 +378,25 @@ font-size: small;
 }
 .newsimage img {
     width: 100%;
+}
+.gettingstarted {
+    text-align: center;
+    font-size: medium;
+    font-style: italic;
+}
+.gettingstarted a {
+    text-decoration: none;
+    color:rgb(0, 51, 255);
+}
+#resourcemain {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+#banner-image {
+    width: 100%;
+    opacity: 85%;
+
 }
 @media only screen and (max-width: 700px) {
     header {
