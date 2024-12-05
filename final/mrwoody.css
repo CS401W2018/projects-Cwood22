@@ -118,7 +118,6 @@ iframe {
     border: 0;
 }
 #communityform {
-    margin: auto;
     padding: 10px;
     font-size: larger;
 }
@@ -556,7 +555,50 @@ background-image: linear-gradient(white,#fa7b7b);
         align-items: center;
     }
     #communityform {
-        width: 80%;
-        margin: auto;
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+        width: 100%;
+        align-items: center;
     }
+    .form-row, .check-row {
+        display: flex;
+        gap: 10px;
+        margin-top: 10px;
+    }
+    .form-row label {
+        margin: 0px;
+        width: 100px;
+        text-align: right;
+    }
+    .formspacer {
+        width: 100px;
+        text-align: right;
+    }
+    .communityform, input[type="submit"] {
+        background-color: #ff5c5c;
+        font-size: larger;
+        color: rgb(0, 0, 0);
+        padding: 10px 30px;
+        border-radius: 5px; 
+        margin-left: 100px;
+        font-weight: bold;
+    }
+    #communityimage {
+      font-size: 10px;  
+      padding: 1px;
+      margin-right: 0px;
+    }
+    legend {
+        padding: 5px;
+        font-size: 10px;
+    }
+    .communityform, input:not([type="submit"]), select, textarea {
+            padding: 5px;
+            font-size: 10px;
+            background-color: #dcdcdc;
+            border-radius: 5px;
+            border: 0;
+            border-bottom: 2px solid black;
+        }
 }
