@@ -428,7 +428,17 @@ font-size: small;
 }
 .resource-cards {
     display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin: 10px;
 }
+#resource-group1 {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    background-color: #009ffb;
+}
+
 @media only screen and (max-width: 1500px) {
     .storefront {
         display: flex;
