@@ -103,10 +103,10 @@ background: transparent;
     flex-direction: row;
 }
 .sidelabel {
-    font-size: larger;
+    font-size: 18px;
     font-weight: bold;
     background-color: #009ffb;
-    border-radius: 100px;
+    border-radius: 10px;
     padding: 10px;
     margin: 10px;
     transition: 0.4s ease-in-out transform;
