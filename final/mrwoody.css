@@ -555,4 +555,8 @@ background-image: linear-gradient(white,#fa7b7b);
     #about-main {
         align-items: center;
     }
+    #communityform {
+        width: 80%;
+        margin: auto;
+    }
 }
